@@ -20,12 +20,14 @@
 :root {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
   cursor: default;
   line-height: 1.5;
   overflow-wrap: break-word;
   -moz-tab-size: 4;
-  tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
 }
 
 html, body {
@@ -64,7 +66,9 @@ input, select, button, fieldset, form, label {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   background: none;
 }
@@ -132,38 +136,6 @@ body {
   height: 100vh;
 }
 
-#u_skip {
-  position: relative;
-  z-index: 3000;
-}
-#u_skip a {
-  position: absolute;
-  top: -30px;
-  left: 0;
-  width: 138px;
-  background: #333;
-  text-align: center;
-}
-#u_skip a:active {
-  top: 0;
-  text-decoration: none;
-  z-index: 1000;
-}
-#u_skip a:focus {
-  top: 0;
-  text-decoration: none;
-  z-index: 1000;
-}
-#u_skip span {
-  display: inline-block;
-  padding: 2px 6px 0 0;
-  font-size: 13px;
-  line-height: 26px;
-  color: #fff;
-  letter-spacing: -1px;
-  white-space: nowrap;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -178,7 +150,7 @@ body {
   display: block;
   width: 95px;
   height: 50px;
-  background: url(/assets/images/Spotify_Logo.png) center/95px auto no-repeat;
+  background: url(../images/Spotify_Logo.png) center/95px auto no-repeat;
 }
 .header.active {
   background: rgb(255, 255, 255);
@@ -203,7 +175,7 @@ body {
   z-index: 100;
   background-color: #1A1A1A;
   color: #fff;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
   transition: all 0.3s ease-out;
 }
@@ -383,7 +355,8 @@ body {
   margin: 0 auto;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   text-align: center;
 }
 .footer .corp-area .corp-item {
@@ -535,7 +508,8 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section .swiper .txt-box .date {
   display: block;
@@ -737,7 +711,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .spot .group-spot .spot-slide .txt-box {
   display: none;
@@ -872,7 +847,8 @@ body {
 .subprogram .group-now .now-bg img {
   width: 100%;
   height: 198px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .schedule .img-box {
